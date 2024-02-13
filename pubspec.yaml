@@ -1,0 +1,409 @@
+name: libsy
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  cloud_firestore: ^4.14.0
+  firebase_auth: ^4.16.0
+  firebase_core: ^2.24.2
+  google_sign_in: ^6.2.1
+  flutter_screenutil: ^5.9.0
+  cupertino_icons: ^1.0.2
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: any 
+  intl_translation: ^0.18.2
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^2.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+  generate: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/pics/nothing.png
+    - assets/logo.jpg
+    - assets/background.jpg
+    - assets/logo.png
+    - assets/pics/beyond good and evil.jpg
+    - assets/pics/The Master of the World.jpg
+    - assets/pics/ay pesinde.jpg
+    - assets/pics/2 Poems.jpg
+    - assets/pics/11 Intentions.jpg
+    - assets/pics/A Connecticut Yankee in King Arthurs Court.jpg
+    - assets/pics/a modest proposal.jpg
+    - assets/pics/A Short History of the World.jpg
+    - assets/pics/a tale of two cities.jpg
+    - assets/pics/A Tangled Tale.jpg
+    - assets/pics/a treatise of human nature.jpg
+    - assets/pics/a vital problem of married.jpg
+    - assets/pics/a vısıt to three fonts.jpg
+    - assets/pics/adventures in journalism.jpg
+    - assets/pics/Adventures of Huckleberry Finn.jpg
+    - assets/pics/alemdagda bir yilan.jpg
+    - assets/pics/Alices Adventures in Wonderland.jpg
+    - assets/pics/An Elegy on the Glory of her Sex.jpg
+    - assets/pics/an enquiry concerning human understanding.jpg
+    - assets/pics/an enquiry concerning the principles of morals.jpg
+    - assets/pics/Ann Veronica.jpg
+    - assets/pics/Around the World in 80 Days.jpg
+    - assets/pics/atesten gomlek.jpg
+    - assets/pics/balkan harbi.jpg
+    - assets/pics/barnaby rudge.jpg
+    - assets/pics/Benjamin Franklin.jpg
+    - assets/pics/bes sehir.jpg
+    - assets/pics/bleak house.jpg
+    - assets/pics/Boom, peace and quiet.jpg
+    - assets/pics/bozkurtlar diriliyor.jpg
+    - assets/pics/bozkurtlarin olumu.jpg
+    - assets/pics/bugunun saraylisi.jpg
+    - assets/pics/butun oykuler.jpg
+    - assets/pics/cakicinin ilk kursunu.jpg
+    - assets/pics/candide.jpg
+    - assets/pics/capitale de la douleur.jpg
+    - assets/pics/classic for chilldren.jpg
+    - assets/pics/cleopatra.jpg
+    - assets/pics/Confidence.jpg
+    - assets/pics/daniel deronda.jpg
+    - assets/pics/david copperfield.jpg
+    - assets/pics/Death in Venice.jpg
+    - assets/pics/Der Zeuberberg.jpg
+    - assets/pics/dialogues concerning natural religion.jpg
+    - assets/pics/dirilen iskelet.jpg
+    - assets/pics/divine comedy.jpg
+    - assets/pics/dombey and son.jpg
+    - assets/pics/don quixote.jpg
+    - assets/pics/Dorothy amd the Wizard Oz.jpg
+    - assets/pics/dream psychology.jpg
+    - assets/pics/Edinburgh.jpg
+    - assets/pics/eight cousins.jpg
+    - assets/pics/fair margaret.jpg
+    - assets/pics/faust 1.jpg
+    - assets/pics/faust 2.jpg
+    - assets/pics/First and Last Things.jpg
+    - assets/pics/Fundamental Principles of the Metaphysic of Morals.jpg
+    - assets/pics/general-introduction-to-psychoanalysis.jpg
+    - assets/pics/God the Invisible King.jpg
+    - assets/pics/great expectations.jpg
+    - assets/pics/Gullivers travel.jpg
+    - assets/pics/hamlet.jpg
+    - assets/pics/hard times.jpg
+    - assets/pics/Hawthorne.jpg
+    - assets/pics/henry v.jpg
+    - assets/pics/homage to catalonia.jpg
+    - assets/pics/hospital sketches.jpg
+    - assets/pics/Human, All Too Human.jpg
+    - assets/pics/hunger.jpg
+    - assets/pics/huzur.jpg
+    - assets/pics/ibni batuta.jpg
+    - assets/pics/icmizde ki seytan.jpg
+    - assets/pics/iffet.jpg
+    - assets/pics/iliad.jpg
+    - assets/pics/In the Days of the Comet.jpg
+    - assets/pics/in the penal colony.jpg
+    - assets/pics/israel potter.jpg
+    - assets/pics/istanbulun ic yuzu.jpg
+    - assets/pics/jack and jill.jpg
+    - assets/pics/jos boys.jpg
+    - assets/pics/julius-caesar.jpg
+    - assets/pics/kalp agrisi.jpg
+    - assets/pics/kasagi.jpg
+    - assets/pics/Kidnapped.jpg
+    - assets/pics/kinglear.jpg
+    - assets/pics/Life on the Mississippi.jpg
+    - assets/pics/macbeth.jpg
+    - assets/pics/MAHUR BESTE.jpg
+    - assets/pics/mansfield park.jpg
+    - assets/pics/markopasa ve yazilari.jpg
+    - assets/pics/martin chuzzlewit.jpg
+    - assets/pics/medari maiset motoru.jpg
+    - assets/pics/memleket hikayeleri.jpg
+    - assets/pics/merchant-of-venice.jpg
+    - assets/pics/metres.jpg
+    - assets/pics/micromeas.jpg
+    - assets/pics/midsummernight.jpg
+    - assets/pics/moby dick.jpg
+    - assets/pics/moon of israel.jpg
+    - assets/pics/Mr. Britling Sees It Through.jpg
+    - assets/pics/mrs  dalloway in bond street.jpg
+    - assets/pics/murebbiye.jpg
+    - assets/pics/nada the lily.jpg
+    - assets/pics/natural selection.jpg
+    - assets/pics/New Arabian.jpg
+    - assets/pics/new life.jpg
+    - assets/pics/nicholas nickleby.jpg
+    - assets/pics/Ninety Three.jpg
+    - assets/pics/notes from the underground.jpg
+    - assets/pics/Notes of a Son and Brother.jpg
+    - assets/pics/Notre Dame de Paris.jpg
+    - assets/pics/now it can be told.jpg
+    - assets/pics/oliver twist.jpg
+    - assets/pics/our mutual friend.jpg
+    - assets/pics/our with spain for cuba freedom.jpg
+    - assets/pics/oyle bir hikaye.jpg
+    - assets/pics/poems of william blake.jpg
+    - assets/pics/pride and prejudice.jpg
+    - assets/pics/Prince Otto, a Romance.jpg
+    - assets/pics/Protagoras.jpg
+    - assets/pics/resurrection.jpg
+    - assets/pics/Rhyme and Reason.jpg
+    - assets/pics/Roderick Hudson.jpg
+    - assets/pics/romeo-and-juliet.jpg
+    - assets/pics/romola.jpg
+    - assets/pics/rose in bloom.jpg
+    - assets/pics/saatlerı ayarlama enstıtusu.jpg
+    - assets/pics/salommbo.jpg
+    - assets/pics/saray ve otesi.jpg
+    - assets/pics/sehrın dısındakıler.jpg
+    - assets/pics/semaver.jpg
+    - assets/pics/sense and sensibility.jpg
+    - assets/pics/sevda sokagi komedyasi.jpg
+    - assets/pics/seyehatname.jpg
+    - assets/pics/she and allan.jpg
+    - assets/pics/silas marner.jpg
+    - assets/pics/sinekkli bakkal.jpg
+    - assets/pics/sipsevdi.jpg
+    - assets/pics/songs of innocence.jpg
+    - assets/pics/St. Ives.jpg
+    - assets/pics/Sylvie and Bruno.jpg
+    - assets/pics/tatarcik.jpg
+    - assets/pics/tempest.jpg
+    - assets/pics/The Adventures of Tom Sawyer.jpg
+    - assets/pics/The Ambassadors.jpg
+    - assets/pics/the american.jpg
+    - assets/pics/The Antichrist.jpg
+    - assets/pics/the beautiful and damned.jpg
+    - assets/pics/The Black Arrow. A Tale Of Two Roses.jpg
+    - assets/pics/the bostanians.jpg
+    - assets/pics/the brothers karamazoc.jpg
+    - assets/pics/The Burning Secret.jpg
+    - assets/pics/The Chartreuse of Parma.jpg
+    - assets/pics/the confidence.jpg
+    - assets/pics/The Cossacks.jpg
+    - assets/pics/the crime and punishment.jpg
+    - assets/pics/The Crime of the Congo.jpg
+    - assets/pics/The Critique of Pure Reason.jpg
+    - assets/pics/the desert village.jpg
+    - assets/pics/The Door in the Wall.jpg
+    - assets/pics/The Exemplary Novels of Cervantes.jpg
+    - assets/pics/The First Men In The Moon.jpg
+    - assets/pics/The Food of the Gods.jpg
+    - assets/pics/The Fur Country.jpg
+    - assets/pics/the gambler.jpg
+    - assets/pics/the genealogy of morals.jpg
+    - assets/pics/the gold bug.jpg
+    - assets/pics/the golden bowl.jpg
+    - assets/pics/The great boer war.jpg
+    - assets/pics/the great gatsby.jpg
+    - assets/pics/the history of england i.jpg
+    - assets/pics/the history of england ii.jpg
+    - assets/pics/the history of england iii.jpg
+    - assets/pics/the history of england iv.jpg
+    - assets/pics/the history of england v.jpg
+    - assets/pics/the history of england vi.jpg
+    - assets/pics/The History Of Mr. Polly.jpg
+    - assets/pics/The Hunting of the Snark.jpg
+    - assets/pics/the idiot.jpg
+    - assets/pics/the inferno.jpg
+    - assets/pics/The Innocents Abroad, travel.jpg
+    - assets/pics/The Invisible Man.jpg
+    - assets/pics/The Island of Dr. Moreau.jpg
+    - assets/pics/the journal to stella.jpg
+    - assets/pics/the king solomon.jpg
+    - assets/pics/the light.jpg
+    - assets/pics/The Man in the Brown Suits.jpg
+    - assets/pics/the masque of the red death.jpg
+    - assets/pics/The Murder on the links.jpg
+    - assets/pics/The Mysterious Island.jpg
+    - assets/pics/the mystery marie roget.jpg
+    - assets/pics/the mystery of edwin drood.jpg
+    - assets/pics/the mystery of the blue train.jpg
+    - assets/pics/The New Machiavelli.jpg
+    - assets/pics/the portrait of dorian gray.jpg
+    - assets/pics/The Prince and the Pauper.jpg
+    - assets/pics/the prince.jpg
+    - assets/pics/the raven.jpg
+    - assets/pics/The Red and The Black.jpg
+    - assets/pics/The Research Magnificent.jpg
+    - assets/pics/The Sea Lady.jpg
+    - assets/pics/The Secret Adversary.jpg
+    - assets/pics/The sleeper awakes.jpg
+    - assets/pics/the soul of a nation.jpg
+    - assets/pics/The Thomas Jefferson writes.jpg
+    - assets/pics/The Time Machine.jpg
+    - assets/pics/the trial.jpg
+    - assets/pics/The Twilight of the Idols.jpg
+    - assets/pics/the voyage of the beagle.jpg
+    - assets/pics/the voyage out.jpg
+    - assets/pics/The War in the Air.jpg
+    - assets/pics/The war in the east japan.jpg
+    - assets/pics/the war of the worlds.jpg
+    - assets/pics/The Wheels of Chance.jpg
+    - assets/pics/the whıte company.jpg
+    - assets/pics/the white nights.jpg
+    - assets/pics/The wizard of wall street and his wealth.jpg
+    - assets/pics/The Wonderful Visit.jpg
+    - assets/pics/The World Set Free.jpg
+    - assets/pics/the wuthering heights.jpg
+    - assets/pics/the-sorrows-of-young-werther.jpg
+    - assets/pics/this side of paradise.jpg
+    - assets/pics/Three Sunsets and Other Poems.jpg
+    - assets/pics/three-essays-on-the-theory-of-sexuality.jpg
+    - assets/pics/thus spake zarathustra.jpg
+    - assets/pics/Tom Sawyer Abroad.jpg
+    - assets/pics/Tom Sawyer, Detective.jpg
+    - assets/pics/Tono-Bungay.jpg
+    - assets/pics/totem-and-taboo.jpg
+    - assets/pics/turkun atesle imtihani.jpg
+    - assets/pics/Twenty Thousand Leagues Under the Sea.jpg
+    - assets/pics/under fire.jpg
+    - assets/pics/Under Sentence of Death.jpg
+    - assets/pics/Vicar of Wakefield.jpg
+    - assets/pics/vurun kahpeye.jpg
+    - assets/pics/wanders.jpg
+    - assets/pics/What is Enlightenment.jpg
+    - assets/pics/white bird.jpg
+    - assets/pics/Wilhelm Meister.jpg
+    - assets/pics/yasadigim gibi.jpg
+    - assets/pics/yeni dunya.jpg
+    - assets/pics/yezidin kizi.jpg
+    - assets/pics/zadig.jpg
+    - assets/pics/A Christmas Carol.jpg 
+    - assets/pics/A London Life.jpg
+    - assets/pics/A Modern Utopia.jpg
+    - assets/pics/a plug year.jpg
+    - assets/pics/america.jpg
+    - assets/pics/animal farm.jpg
+    - assets/pics/anna karenina.jpg
+    - assets/pics/art of war.jpg
+    - assets/pics/ayesha the return of she.jpg
+    - assets/pics/cadi.jpg
+    - assets/pics/boon.jpg
+    - assets/pics/ask batagi.jpg
+    - assets/pics/Anticipations.jpg
+    - assets/pics/aski memnu.jpg
+    - assets/pics/bealby.jpg
+    - assets/pics/kipps.jpg
+    - assets/pics/Les Miserables.jpg
+    - assets/pics/Kidnapped.jpg
+    - assets/pics/kirik hayatlar.jpg
+    - assets/pics/jos boys.jpg
+    - assets/pics/Italian Hours.jpg
+    - assets/pics/little dorrit.jpg
+    - assets/pics/little men.jpg
+    - assets/pics/little woman.jpg
+    - assets/pics/meditations.jpg
+    - assets/pics/metamorphosis.jpg
+    - assets/pics/Middlemarch.jpg
+    - assets/pics/pickwick club.jpg
+    - assets/pics/A Modern Utopia.jpg
+    - assets/pics/othello.jpg
+    - assets/pics/odysey.jpg
+    - assets/pics/peter pan.jpg
+    - assets/pics/Prince Otto, a Romance.jpg
+    - assets/pics/romola.jpg
+    - assets/pics/rose in bloom.jpg
+    - assets/pics/the light.jpg
+    - assets/pics/under fire.jpg
+    - assets/pics/wanders.jpg
+    - assets/pics/mor salkimli ev.jpg
+    - assets/pics/ruh adam.jpg
+    - assets/pics/she and allan.jpg
+    - assets/pics/tatarcik.jpg
+    - assets/pics/peter pan in kensington gardens.jpg
+    - assets/pics/sherlock holmes.jpg
+    - assets/pics/the idiot.jpg
+    - assets/pics/Around the World in 80 Days.jpg
+    - assets/pics/robinson crouse.jpg
+    - assets/pics/Gullivers travel.jpg
+    - assets/pics/ask batagi.jpg
+    - assets/pics/aydakı kadın.jpg
+    - assets/pics/emma.jpg
+    - assets/pics/kurk mantolu madonna.jpg
+    - assets/pics/Love and Mr Lewisham.jpg
+    - assets/pics/madame bovary.jpg
+    - assets/pics/simdi sevisme vakti.jpg
+
+
+
+
+
+
+
+
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
