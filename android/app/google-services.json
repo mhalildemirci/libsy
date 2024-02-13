@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "196711973140",
+    "project_id": "libsy-3cba6",
+    "storage_bucket": "libsy-3cba6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:196711973140:android:066d0a1c75a0b1641b0201",
+        "android_client_info": {
+          "package_name": "com.example.libsy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWrU-Bue8dq91cOwwF7A8AX-Wo-TCom2M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
